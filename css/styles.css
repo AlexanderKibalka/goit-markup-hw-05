@@ -764,8 +764,13 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  background-color: transparent;
 }
-.modal-form-checkbox:checked + .modal-form-checkbox-custom {
+.modal-form-checkbox:checked {
+  width: 40px;
+  height: 40px;
+}
+.modal-form-checkbox:checked + .modal-form-field > .modal-form-checkbox-custom {
   background-color: var(--bt-hover-cl);
   border: none;
   fill: var(--cloud-cl);
@@ -776,7 +781,8 @@ img {
   transition: opacity var(--anim);
 }
 .modal-form-checkbox:checked
-  + .modal-form-checkbox-custom
+  + .modal-form-field
+  > .modal-form-checkbox-custom
   > .modal-form-checkbox-icon {
   opacity: 1;
 }
