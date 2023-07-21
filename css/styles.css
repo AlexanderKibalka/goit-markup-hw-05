@@ -677,14 +677,21 @@ img {
   position: relative;
   display: block;
   margin-bottom: 8px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--lightslate);
 }
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
   color: var(--lightslate);
   font-size: 12px;
-  line-height: 14px;
   letter-spacing: 0.48px;
+}
+.input-conteiner {
+  position: relative;
 }
 .modal-form-input {
   width: 100%;
@@ -737,10 +744,6 @@ img {
   align-items: center;
   gap: 8px;
   margin-bottom: 24px;
-}
-.modal-form-agreement {
-}
-.modal-form-checkbox {
 }
 .modal-form-checkbox-custom {
   display: flex;
